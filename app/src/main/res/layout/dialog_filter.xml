@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#a5efb9"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingStart="10dp"
+            android:text="Total Cases "
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textColor="#8815e7"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+            android:id="@+id/seekbarTotalCases"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:autofillHints="Select Project"
+            android:layout_below="@id/tv1"
+            app:bar_color="#EE88F7"
+            app:min_value="0"
+            app:max_value="100"
+            app:bar_highlight_color="#104EEA"
+            app:left_thumb_color="#8D0D99"
+            app:right_thumb_color="#8D0D99"
+            app:left_thumb_color_pressed="#56005E"
+            app:right_thumb_color_pressed="#56005E"
+            app:data_type="_integer"
+            android:padding="10dp"
+            app:corner_radius="10"/>
+
+        <TextView
+        android:id="@+id/textViewMinCases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekbarTotalCases"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/textViewMaxCases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekbarTotalCases"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewMaxCases"
+            android:layout_marginLeft="10dp"
+            android:paddingStart="10dp"
+            android:text="Recovered "
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textColor="#8815e7"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+            android:id="@+id/seekbarRecovered"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv2"
+            android:padding="10dp"
+            app:bar_color="#EE88F7"
+            app:corner_radius="10"
+            app:min_value="0"
+            app:max_value="100"
+            app:bar_highlight_color="#4AA807"
+            app:left_thumb_color="#8D0D99"
+            app:right_thumb_color="#8D0D99"
+            app:left_thumb_color_pressed="#56005E"
+            app:right_thumb_color_pressed="#56005E"
+            app:data_type="_integer"/>
+
+        <TextView
+            android:id="@+id/textViewMinRecovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekbarRecovered"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/textViewMaxRecovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekbarRecovered"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingStart="10dp"
+            android:text="Deaths "
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_below="@id/textViewMaxRecovered"
+            android:textAlignment="center"
+            android:textColor="#8815e7"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+            android:id="@+id/seekbarDeaths"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv3"
+            android:padding="10dp"
+            app:bar_color="#EE88F7"
+            app:corner_radius="10"
+            app:min_value="0"
+            app:max_value="100"
+            app:bar_highlight_color="#EA1010"
+            app:left_thumb_color="#8D0D99"
+            app:right_thumb_color="#8D0D99"
+            app:left_thumb_color_pressed="#56005E"
+            app:right_thumb_color_pressed="#56005E"
+            app:data_type="_integer"/>
+
+        <TextView
+            android:id="@+id/textViewMinDeaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekbarDeaths"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/textViewMaxDeaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekbarDeaths"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewMinDeaths"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingStart="10dp"
+                android:text="Search "
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/tv_cancel"
+                android:textAlignment="center"
+                android:textColor="#8815e7"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Cancel"
+                android:textAlignment="center"
+                android:textColor="#8815e7"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
